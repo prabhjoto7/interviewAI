@@ -1,0 +1,43 @@
+# Core
+numpy==1.26.4
+pandas==2.3.3
+matplotlib==3.10.7
+
+# Streamlit app
+streamlit==1.38.0
+plotly==6.3.1
+
+# Audio processing
+speechrecognition==3.10.4
+pydub==0.25.1
+librosa==0.11.0
+
+# Computer vision & face analysis
+opencv-contrib-python-headless==4.10.0.84
+deepface==0.0.95
+mediapipe==0.10.14
+mtcnn==1.0.0
+
+# Machine learning & NLP
+transformers==4.45.2
+sentence-transformers==3.3.0
+language-tool-python==2.9.4
+spacy==3.7.5
+nltk==3.9.2
+torch==2.5.1
+tensorflow-cpu==2.17.0
+scikit-learn==1.5.2
+huggingface-hub==0.25.2
+
+# Image/video utilities
+pillow==10.3.0
+moviepy==2.2.1
+
+# YOLO object detection
+ultralytics==8.3.20
+
+# Utility
+tqdm==4.66.5
+requests==2.32.3
+
+
