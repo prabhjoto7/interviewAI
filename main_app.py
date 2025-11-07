@@ -278,7 +278,7 @@ def show_home_page():
     with col1:
         st.markdown("**✅ Correct Positioning**")
         correct_img = create_frame_demo_image(is_correct=True)
-        st.image(correct_img, use_container_width=True)
+        st.image(correct_img )
         st.markdown("""
         - Center yourself in the frame
         - Keep entire face visible
@@ -290,7 +290,7 @@ def show_home_page():
     with col2:
         st.markdown("**❌ Common Mistakes**")
         incorrect_img = create_frame_demo_image(is_correct=False)
-        st.image(incorrect_img, use_container_width=True)
+        st.image(incorrect_img )
         st.markdown("""
         - Moving outside boundaries
         - Multiple people visible
@@ -497,7 +497,7 @@ else:  # Interview page
         
         ui_callbacks = {
             'countdown_update': lambda msg: countdown_placeholder.warning(msg) if msg else countdown_placeholder.empty(),
-            'video_update': lambda frame: video_placeholder.image(frame, channels="BGR", use_container_width=True) if frame is not None else video_placeholder.empty(),
+            'video_update': lambda frame: video_placeholder.image(frame, channels="BGR") if frame is not None else video_placeholder.empty(),
             'status_update': lambda text: status_placeholder.markdown(text) if text else status_placeholder.empty(),
             'progress_update': lambda val: progress_bar.progress(val),
             'timer_update': lambda text: timer_text.info(text) if text else timer_text.empty(),
