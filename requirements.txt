@@ -28,6 +28,7 @@ torch==2.5.1
 tensorflow-cpu==2.17.0
 scikit-learn==1.5.2
 huggingface-hub==0.25.2
+tf-keras
 
 # Image/video utilities
 pillow==10.3.0
